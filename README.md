@@ -21,4 +21,8 @@ git config --global alias.c "commit -m"
 git config --global alias.l "log --oneline"
 ```
 
+## Ver las diferencias entre el WD y LR
 
+```sh
+git diff
+``` 
