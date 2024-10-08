@@ -61,6 +61,15 @@ git diff dev # ejemplo. comparo feature/ramas con dev
 git branch -a # Me muestra las ramas locales y remotas
 ```
 
+## Eliminar un rama 
+
+```sh
+git branch -d <nombre-rama> # Si la rama que estoy borrando ya fue fusionada me va a borrar la rama.
+git branch -D <nombre-rama> # confirmación de borrado de una rama que todavía no ha sido fusionada en el repositorio
+git branch -d feature/ramas #ya estaba fusionada feature/ramas
+git branch -D alejo # no estaba fusioanda por lo cual me pidio confirmación
+```
+
 ## Fusionando ramas
 Estoy sobre la rama main y me quiero traer lo que está en feature/ramas
 
@@ -72,22 +81,13 @@ git merge feature/ramas # Me traigo a main lo que tenía en feature/ramas
 ```
 
 * Fusión -> Fast-forward -> git hace la fusión automaticamente.
+* Fusión -> con estrategia -> git hace la fusión automaticamente.
 * Fusión -> con conflicto -> git no puede fusionar automaticamente, entonces nos va a pedir ayuda a nosotros
 
 ## Abortar la fusión
 
 ```sh
 git merge --abort
-```
-
-
-## Eliminar un rama 
-
-```sh
-git branch -d <nombre-rama> # Si la rama que estoy borrando ya fue fusionada me va a borrar la rama.
-git branch -D <nombre-rama> # confirmación de borrado de una rama que todavía no ha sido fusionada en el repositorio
-git branch -d feature/ramas #ya estaba fusionada feature/ramas
-git branch -D alejo # no estaba fusioanda por lo cual me pidio confirmación
 ```
 
 
