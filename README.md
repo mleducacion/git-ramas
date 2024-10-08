@@ -16,6 +16,9 @@ git status
 
 ```sh
 git config --global alias.st "status --short"
+git config --global alias.a "add"
+git config --global alias.c "commit -m"
+git config --global alias.l "log --oneline"
 ```
 
 
