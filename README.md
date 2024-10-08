@@ -72,6 +72,14 @@ git merge feature/ramas # Me traigo a main lo que tenía en feature/ramas
 ```
 
 * Fusión -> Fast-forward -> git hace la fusión automaticamente.
+* Fusión -> con conflicto -> git no puede fusionar automaticamente, entonces nos va a pedir ayuda a nosotros
+
+## Abortar la fusión
+
+```sh
+git merge --abort
+```
+
 
 
 
